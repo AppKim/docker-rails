@@ -1,0 +1,15 @@
+<h1 align="center">掲示板</h1><br />
+
+<% @boardList.each do |t| %>
+タイトル : <%= t.title %><br />
+コンテンツ : <%= t.content %><br />
+<a href="/board/show/<%= t.id %>">詳細</a>
+<a href="/board/edit/<%= t.id%>">更新</a>
+<a href="/board/destroy/<%= t.id%>">削除</a>
+<hr />
+<% end %>
+
+<div style="text-align: right">
+    <a href="/board/new" class="btn btn-primary">投稿</a>
+
+</div>
