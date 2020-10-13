@@ -19,7 +19,7 @@ services:
     container_name: docker-rails-db
     image: postgres:12.1-alpine
     volumes:
-      - ./docker/db/storage:/var/lib/postgresql/data:cached #
+      - ./docker/db/storage:/var/lib/postgresql/data:cached 
     ports:
       - '5432:5432'
     environment:
