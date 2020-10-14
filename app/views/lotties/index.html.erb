@@ -1,0 +1,26 @@
+<right><%= link_to  "Home", lotties_index_path %></right>
+<hr>
+
+<h1 align="center">ロト番号</h1>
+<center><%= @lotto %></center>
+
+
+<%= content_tag(:div,"Ruby")%>
+<div>Ruby</div>
+
+<%= content_tag(:span, "On" ,style:"color:red")%>
+<span style="color:red">On</span>
+
+<%= content_tag(:p, "Rails" , class: "foo bar")%>
+<p class="foo bar">Rails</p>
+
+<%= text_field_tag :title, nil,class:"form-control" %>
+<input type="text", name="title", id="title", class="form-control">
+
+<%= text_field_tag :title, "Ruby on Rails", class: "form-control" %>
+<input type="text" name="title" id="title" class="form-control" value="Ruby on Rails">
+
+<%= form_tag( lotties_index_path,method: :get) do %>
+<input type="text" name="nickname">
+<input type="submit">
+<% end %>
