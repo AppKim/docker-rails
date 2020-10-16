@@ -35,6 +35,9 @@ gem 'devise'
 gem 'rails-i18n', '~> 6.0'
 gem 'devise-i18n'
 
+#ruby-fomatter
+gem 'rufo'
+
 # Bootstrap
 gem 'devise-bootstrap-views', '~> 1.0'#削除しても大丈夫。
 
