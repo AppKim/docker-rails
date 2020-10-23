@@ -1,0 +1,12 @@
+<%= form_tag( calculator_add_path , method: :post) do %>
+<div>
+  <label>first: </label>
+  <input type="text" name="first" />
+</div>
+<div>
+  <label>second: </label>
+  <input type="text" name="second" />
+</div>
+<input type="submit" />
+<a href="/calculator/add/1/1">1더하기1은?</a>
+<% end %>

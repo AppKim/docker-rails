@@ -1,0 +1,9 @@
+<% @posts.each do |post| %> 
+<%= post.name %><br />
+<%= post.content %>
+<a href="/posts/modify/<%= post.id %>">modify</a>
+<a href="/posts/delete/<%= post.id %>">delete</a>
+<hr />
+<% end %>
+
+<a href="/posts/write">write</a>
